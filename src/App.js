@@ -5,7 +5,6 @@ import EnterPrise from './components/EnterPrise';
 function App() {
   return (
     <div className="App">
-     <EnterPrise/>
     </div>
   );
 }
