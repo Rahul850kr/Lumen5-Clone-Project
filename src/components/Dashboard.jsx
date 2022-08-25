@@ -1,8 +1,8 @@
 import { Box,  HStack, Select,  Stack, Text } from '@chakra-ui/react'
 import React from 'react'
-import DashBody from '../DashBody'
-import DashSidebar from '../DashSidebar'
-import NavbarAfterLogin from '../NavbarAfterLogin'
+import DashBody from './DashBody'
+import DashSidebar from './DashSidebar'
+import NavbarAfterLogin from './NavbarAfterLogin'
 
 
 const Dashboard = () => {

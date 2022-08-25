@@ -2,7 +2,7 @@
 import './App.css';
 import DashSidebar from './components/DashSidebar';
 import Footer from './components/Footer';
-import Dashboard from './components/Pages/Dashboard';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
