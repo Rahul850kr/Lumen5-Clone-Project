@@ -10,6 +10,7 @@ import {
   AspectRatio,
 } from "@chakra-ui/react";
 import "./EnterPriceStyle.css";
+import NavbarBeforeLogin from "./NavbarBeforeLogin";
 
 const label = [
   {
@@ -127,6 +128,7 @@ const EnterPrise = () => {
   return (
     <>
       {/* first div */}
+      <NavbarBeforeLogin/>
       <div className="en-div1">
         <div className="en-div1-mainpara">
           <div className="en-div1-para">
