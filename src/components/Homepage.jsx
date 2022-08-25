@@ -9,6 +9,10 @@ import Footer from "./Footer"
 
 const Homepage = () => {
 // VIDEO COMPONENT FOR RE-RENDERING
+
+
+
+
 const Video = ({url}) => {
     return (
         <video
