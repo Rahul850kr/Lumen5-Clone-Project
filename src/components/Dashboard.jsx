@@ -1,13 +1,14 @@
 import { Box,  HStack, Select,  Stack, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 import { useEffect } from 'react'
 import DashBody from './DashBody'
 import DashSidebar from './DashSidebar'
 import NavbarAfterLogin from './NavbarAfterLogin'
+import Selectcomponent from './Selectcomponent'
 
 
 const Dashboard = () => {
-
+let [count,setcount]=useState(0)
  
 
   
@@ -21,17 +22,18 @@ const Dashboard = () => {
 <HStack  h={["50px","75px","100px"]} justifyContent="space-between" w="100%" p="0px 20px 0px 20px"  >
   <Text fontSize={["80%","120%","170%"]} fontWeight="semibold">All vedios</Text>
  
-  
-<Select bg="white" h={["25px","30px"]} w={["45%","35%","20%"]} fontSize={["50%","70%","md"]} outline="1px solid rgba(0,0,0,0.1)" >
+ { count>0 ?<Selectcomponent count={count}></Selectcomponent>:
+<Select bg="white" h={["25px","30px","40px"]} w={["42%","32%","17%"]} fontSize={["50%","70%","80%"]} outline="1px solid rgba(0,0,0,0.1)" >
   <option value='Last modified'>Last modified</option>
   <option value='Last created'>Last created</option>
   <option value='Alphabetically'>Alphabetically</option>
 </Select>
+}
 </HStack>
 
 
   </Box>
-<DashBody/>
+<DashBody setcount={setcount}/>
 </Stack>
 
 </Stack>
