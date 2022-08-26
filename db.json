@@ -1,0 +1,14 @@
+{
+  "Projects": [
+    {
+      "title": "New project",
+      "color": "#106eb7",
+      "id": 4
+    },
+    {
+      "title": "lumen 3",
+      "color": "#017d9c",
+      "id": 6
+    }
+  ]
+}

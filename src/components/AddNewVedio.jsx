@@ -24,14 +24,14 @@ const AddNewVedio = ({ title, badge }) => {
             Your browser does not support the video tag.
           </video>
           {
-            hover ? <Checkbox onMouseOver={() => sethover(true)} onMouseLeave={() => sethover(false)} position="absolute" top="10%" left="85%" colorScheme='green' outline="2px solid blue"></Checkbox> : null
+            hover ? <Checkbox size={['sm',"md","md"]} onMouseOver={() => sethover(true)} onMouseLeave={() => sethover(false)} position="absolute" top="10%" left="85%" colorScheme='green' outline="1px solid blue"></Checkbox> : null
           }
           {
-            hover ? <Box onMouseOver={() => sethover(true)} onMouseLeave={() => sethover(false)} left="0px" backgroundColor="#7d8084" color="white" position="absolute" w="100%" top="73%" textAlign="center"> <Text >edit</Text></Box> : null
+            hover ? <Box onMouseOver={() => sethover(true)} onMouseLeave={() => sethover(false)} left="0px" backgroundColor="#7d8084" color="white" position="absolute" w="100%" top={["73%","73%","73%"]} textAlign="center"> <Text >Edit</Text></Box> : null
           }
 
           {
-            input ? <Input defaultValue={title || edittitile} variant="flushed"></Input> : <Text p="0px 10px 0px 10px" mt={["5px", "7px", "8px"]} onClick={() => setinput(true)}>{title || edittitile}<EditIcon></EditIcon></Text>
+            input ? <Input p="0px 10px 0px 10px" fontSize={["5px","10px","15px"]} defaultValue={title || edittitile} variant="flushed"></Input> : <Text p="0px 10px 0px 10px" mt={["5px", "7px", "10px"]} onClick={() => setinput(true)}>{title || edittitile}<EditIcon></EditIcon></Text>
 
           }
 
@@ -42,7 +42,7 @@ const AddNewVedio = ({ title, badge }) => {
         </Box>
         <Flex p={["0px 5px 5px 5px", "0px 7px 5px 7px", "0px 10px 5px 10px"]}>
           <Box>
-            <Text fontSize={["5px", "7px", "15px"]} fontWeight="semibold" color="#c8cbd9"><CalendarIcon />  No Project
+            <Text fontSize={["5px", "7px", "12px"]} fontWeight="semibold" color="#c8cbd9"><CalendarIcon />  No Project
             </Text>
           </Box>
           <Spacer />
