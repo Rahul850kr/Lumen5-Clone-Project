@@ -2,7 +2,7 @@ import { Box, Button, Flex, HStack, Input, Modal, ModalBody, ModalCloseButton, M
 import { useSearchParams } from "react-router-dom"
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addprojects, deleteprojects, getprojects } from './Projectredux/action'
+import { addprojects, deleteprojects, getprojects } from "../Redux/ProjectReducer/action"
 import { DeleteIcon } from '@chakra-ui/icons'
 import { useToast } from '@chakra-ui/react'
 
