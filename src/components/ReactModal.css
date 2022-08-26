@@ -1,0 +1,156 @@
+.display-div{
+    /* border: 1px solid red; */
+    width: 580px;
+    height: auto;
+    margin: auto;
+    /* margin-top: 210px; */
+    margin-top: 5%;
+    /* margin-bottom: 210px; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+.top-div{
+    display: flex;
+    justify-content: space-between;
+}
+.top-div > p{
+    color: rgb(36, 40, 47);
+    font-family: Poppins, sans-serif;
+    font-size: 23px;
+    line-height: 10px;
+    margin: 32px 0 0 29px;
+    padding:0px 0px 0px 0px;
+    font-weight:400;
+}
+
+.top-div > button{
+    background-color: white;
+    width: 25px;
+    margin: 22px 29px 0 0;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: 0px;
+}
+.line{
+    width: 100%;
+    margin: 20px 0 0 0;
+    color: #e0e1e8;
+}
+
+.p-tag{
+    /* border: 1px solid black; */
+    margin: 10px 0 0 29px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.video-div{
+    /* border: 1px solid blue; */
+    height: 280px;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.video-display{
+    height: 280px;
+    width: 500px;
+    /* border:1px solid red; */
+    margin: auto;
+    border-radius: 15px;
+}
+.format-div{
+    /* border: 1px solid purple; */
+    width:90%;
+    margin:auto;
+    display: flex;
+}
+.button-flex > p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}
+.button-flex{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.button-flex > button{
+    background-color: #c8cbd9;
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.format-div > button{
+    width: 150px;
+    height: 45px;
+    font-size: 13px;
+    margin-left: 37px;
+    background-color: #5846f6;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 0px;
+    line-height: 21px;
+    font-weight: 400;
+    margin:5px 0 0 60px
+}
+.format-div > button:hover{
+    background-color: #5b49b5;
+}
+
+@media all and (max-width:768px){
+    .display-div{
+        width:300px;
+        margin-top: 30%;
+    }
+    .video-div{
+        width:300px;
+        height:170px;
+    }
+    .video-display{
+        width:280px;
+        height:157px;
+        margin-left: 10px;
+    }
+    .format-div{
+        /* border: 1px solid purple; */
+        width:90%;
+        margin:auto;
+        display: flex;
+    }
+    .button-flex > p{
+        display: none;
+        font-size: 15px;
+        line-height: 3px;
+    }
+    .button-flex > button{
+        background-color: #c8cbd9;
+        display: none;
+        width: 35px;
+        height: 15px;
+        margin-top: 10px;
+        border: 0px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .format-div > button{
+        width: 200px;
+        height: 30px;
+        font-size: 10px;
+        margin-left: -50px;
+        margin-bottom: 10px;
+        background-color: #5846f6;
+        color: white;
+        cursor: pointer;
+        border-radius: 25px;
+        font-weight: 400;
+    }
+}
