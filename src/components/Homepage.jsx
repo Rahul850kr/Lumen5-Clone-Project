@@ -9,6 +9,10 @@ import Footer from "./Footer"
 
 const Homepage = () => {
 // VIDEO COMPONENT FOR RE-RENDERING
+
+
+
+
 const Video = ({url}) => {
     return (
         <video
@@ -330,13 +334,17 @@ const [vidchange, setVidChabge] = useState(contentmarketvideos)
                         <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/08/Host-an-Instagram-Takeover-in-7-Simple-Steps.jpg" alt="card"/>
                             <div className="text-b p-l m-b">BLOG</div>
                             <div className="text-l p-l mb2">How to Increase <br/>Your Facebook <br/>Video Views <br/>[Complete Guide]</div>
+
                             <div className="text-r link">Read Story</div>
+
                         </div>
                         <div className="card3 borderlite w-30">
                         <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2018/10/photo-1518406432532-9cbef5697723.jpeg" alt="card"/>
                             <div className="text-b p-l m-b">BLOG</div>
                             <div className="text-l p-l mb3">The Importance of <br/>Video in Your <br/>Content Strategy</div>
+
                             <div className="text-r link">Read Story </div>
+
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,130 @@
+.mainDiv {
+  display: flex;
+}
+.sidebar {
+  background-image: url("https://storage.googleapis.com/lumen5-site-images/website-assets/login-bg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 32%;
+  padding: 40px;
+}
+
+.logo {
+  height: 90px;
+  width: 150px;
+  /* margin-top: 50px; */
+}
+
+.superCharge {
+  font-size: 50px;
+  line-height: normal;
+  text-align: left;
+  font-weight: 550;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.secondTextInSideBar {
+  font-size: 30px;
+  color: white;
+  line-height: normal;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.companyLogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.signupinfo {
+  width: 80%;
+  /* border: 1px solid red; */
+  /* height: 100px; */
+  margin: auto;
+  padding: 5px 30px;
+}
+
+.rightDiv {
+  width: 68%;
+}
+
+.infoLogo {
+  display: none;
+  height: 42px;
+  width: 160px;
+  margin-top: 30px;
+}
+
+.secondDiv_head {
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.passwordCondition {
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+  margin-top: 30px;
+}
+
+.passwordCondition_innerDiv {
+  text-align: left;
+}
+
+.signup_btn {
+  background-color: #5846f6;
+  color: white;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.fbSignup {
+  border: 3px solid #3529a1;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #3529a1;
+}
+
+@media all and (max-width: 987px) {
+  .sidebar {
+    display: none;
+  }
+  .rightDiv {
+    width: 80%;
+    /* margin: auto; */
+  }
+  .secondDiv_head {
+    /* display: none; */
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .infoLogo {
+    display: flex;
+  }
+  .passwordCondition {
+    font-size: 16px;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .vstack{
+    margin-top: 30px;
+  }
+  .passwordCondition_innerDiv li{
+    font-size: 13px;
+  }
+  .cat{
+    font-size: 14px;
+  }
+}
