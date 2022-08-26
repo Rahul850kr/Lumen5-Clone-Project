@@ -1,11 +1,16 @@
 import { Box,  HStack, Select,  Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+import { useEffect } from 'react'
 import DashBody from './DashBody'
 import DashSidebar from './DashSidebar'
 import NavbarAfterLogin from './NavbarAfterLogin'
 
 
 const Dashboard = () => {
+
+ 
+
+  
   return (
     <Stack w="100%">
       <NavbarAfterLogin/>
@@ -33,5 +38,6 @@ const Dashboard = () => {
     </Stack>
   )
 }
+
 
 export default Dashboard
