@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Signup.module.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { Flex, Input, Spacer, Text, VStack } from "@chakra-ui/react";
+import {useDispatch} from "react-redux"
+import { signup } from "../Redux/SignupReducer/action";
 
 const Signup = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const payload = { name, email, password };
+  const dispatch = useDispatch();
+  const navigate = useNavigate()
+
+  // console.log(payload)
+
+  // const handleSignup = () => {
+  //   const data = getData("userDetails") || [];
+  //   data.push(payload);
+  //   setData(data);
+  // };
+
   return (
     <div className={style.mainDiv}>
       <div className={style.sidebar}>
@@ -61,19 +79,40 @@ const Signup = () => {
           </Text>
 
           <VStack className={style.vstack} marginTop={`70px`} alignItems="left">
-            <Text className={style.cat} textAlign={`left`}>FULL NAME</Text>
-            <Input variant="flushed" type="text" />
-            <Text className={style.cat}  textAlign={`left`}>WORK EMAIL</Text>
-            <Input variant="flushed" type="email" />
+            <Text className={style.cat} textAlign={`left`}>
+              FULL NAME
+            </Text>
+            <Input
+              variant="flushed"
+              type="text"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+            />
+            <Text className={style.cat} textAlign={`left`}>
+              WORK EMAIL
+            </Text>
+            <Input
+              variant="flushed"
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
             <Flex>
-              <Text className={style.cat}  textAlign={`left`}>PASSWORD</Text>
+              <Text className={style.cat} textAlign={`left`}>
+                PASSWORD
+              </Text>
               <Spacer />
               <Flex alignItems="center" gap="10px">
                 <i className="fa-solid fa-eye"></i>
-                <Text className={style.cat} >Show</Text>
+                <Text className={style.cat}>Show</Text>
               </Flex>
             </Flex>
-            <Input variant="flushed" type="password" />
+            <Input
+              variant="flushed"
+              type="password"
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+            />
           </VStack>
           <div className={style.passwordCondition}>
             <div className={style.passwordCondition_innerDiv}>
@@ -85,7 +124,13 @@ const Signup = () => {
               <li>Contains a number or symbol</li>
             </div>
           </div>
-          <button className={style.signup_btn}>Create Account</button>
+          <button onClick={()=>{
+            dispatch(signup(payload));
+            alert("signup successfull")
+            navigate('/login')
+          }} className={style.signup_btn}>
+            Create Account
+          </button>
           <p style={{ marginTop: "20px", marginBottom: "20px" }}>Or</p>
           <button className={style.fbSignup}>
             {" "}
