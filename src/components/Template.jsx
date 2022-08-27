@@ -1,6 +1,6 @@
 import React, { useEffect,useRef,Component, useState } from 'react';
-import styled from 'styled-components';
 import "./Template.css";
+import NavbarAfterLogin from './NavbarAfterLogin';
 import {ReactModal} from "./ReactModal";
 import { Show_Button,Left_div_compo } from "./Button";
 
@@ -360,6 +360,7 @@ const Template = () => {
 
   return (
     <div className='container'>
+     <NavbarAfterLogin/>
           <div className="bgcolor">
                <div className="component-div">
                     <div className="LeftDiv">
@@ -549,6 +550,7 @@ const Template = () => {
                     </div>
                </div>
           </div>
+          
     </div>
   )
 }

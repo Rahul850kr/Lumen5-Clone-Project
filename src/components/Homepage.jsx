@@ -165,7 +165,7 @@ const [vidchange, setVidChabge] = useState(contentmarketvideos)
                 <div className="sec1div1">
                     <p className="sec1-p1">Video maker built to <br/>supercharge your <br/>current strategy</p>
                     <p className="sec1-p2">Easily make videos for <br/><b>content marketing,<br/>thought leadership,</b>  and <br/><b>brand awareness</b> in a snap.</p>
-                    <button className="signupbtn">Sign up free</button>
+                    <button className="signupbtn"><Link to="/signup">Sign up free</Link></button>
                 </div>
                 <div className="sec1-2">
                     <img className="section1img1" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-hero.png" alt="section1-i"/>
@@ -205,7 +205,7 @@ const [vidchange, setVidChabge] = useState(contentmarketvideos)
                     {/* <div className="file-i"><i class="fa-solid fa-file-lines file-icon"></i></div> */}
                     <div className="sec4-2-2">Transform blog posts into videos with A.I.</div>
                     <div className="sec4-2-3">Starting from a blank page is hard — and with Lumen5, you don’t have to. Our AI-powered technology helps you storyboard your ideas, fit your content to a layout, and find music and visuals that enhance your message.</div>
-                    <div className="sec4-2-4"> <Link to="/singup" className='nav-links'>Get started for free <ArrowForwardIcon style={{height:"12px"}}/></Link></div>
+                    <div className="sec4-2-4"> <Link to="/signup" className='nav-links'>Get started for free <ArrowForwardIcon style={{height:"12px"}}/></Link></div>
                     <div className="sec4-2-5">“Lumen5 has enabled us to create more videos and drive more traffic, while having more time to <br/>invest in other projects.”</div>
                     <div className="d-flex">
                         <div className="s4-rh-ld  ">
@@ -225,7 +225,7 @@ const [vidchange, setVidChabge] = useState(contentmarketvideos)
                     {/* <div className="file-i" ><i className="fa-solid fa-image file-icon"></i></div> */}
                     <div className="sec4-2-2">Content library with <br /> millions of stock photos & videos</div>
                     <div className="sec5-1-3">The Lumen5 media library gives you <br/>easy access to millions of photos,<br/>video clips, and audio files, so you <br/>always have the elements you need<br/>to create the perfect video.</div>
-                    <div className="sec5-1-4"><Link to="/signUp" className='nav-links'>View plans <ArrowForwardIcon style={{height:"12px"}}/></Link></div>
+                    <div className="sec5-1-4"><Link to="/signup" className='nav-links'>View plans <ArrowForwardIcon style={{height:"12px"}}/></Link></div>
                     <div className="sec5-1-5">“We promoted our downloadable study <br/>on top PPC skills for 2019 on social media <br/>using a short video created in Lumen5 in<br/>just 30 minutes, and decreased cost per<br/>download by 5x!”</div>
                     <div className="d-flex">
                         <div className="s4-rh-ld">
@@ -251,7 +251,7 @@ const [vidchange, setVidChabge] = useState(contentmarketvideos)
                     {/* <div  className="file-i"><i className="fa-solid fa-palette file-icon"></i></div> */}
                     <div className="sec4-2-2">Making it easy to <br/>stay on brand</div>
                     <div className="sec6-2-3">It has never been easier to stay on brand.<br/>With Lumen5 templates, you can customize<br/>each video with your unique logo, <br/>watermark, fonts, colors, and more.</div>
-                    <div className="sec4-2-4"><Link to="/signUp" className='nav-links'>Get started free <ArrowForwardIcon style={{height:"12px"}}/> </Link></div>
+                    <div className="sec4-2-4"><Link to="/signup" className='nav-links'>Get started free <ArrowForwardIcon style={{height:"12px"}}/> </Link></div>
                     <div className="sec4-2-5">“Whenever I got in touch with Lumen5 I felt like my <br/>suggestions mattered and I was being listened to. <br/>It’s like I’m co-creating in a tiny way. It’s a great<br/>feeling.”</div>
                     <div className="width d-flex">
                         <div className="s4-rh-ld">
@@ -298,7 +298,7 @@ const [vidchange, setVidChabge] = useState(contentmarketvideos)
                                             <p className="p-1">{slideImage.description}</p>
                                             <p className="p-2">{slideImage.name}</p>
                                             <p className="p-3">{slideImage.title}</p>
-                                            <p className="lastp"><Link to="/signUp" className="nav-linkss">Read story </Link></p>
+                                            <p className="lastp"><Link to="/signup" className="nav-linkss">Read story </Link></p>
                                         </div>
                                         </span>
                                     
