@@ -2,21 +2,21 @@ import { ChevronDownIcon, CopyIcon, DeleteIcon } from '@chakra-ui/icons'
 import { Box, Button, HStack, Menu, MenuButton, MenuItem, MenuList, Text, Tooltip } from '@chakra-ui/react'
 import React from 'react'
 
-const Selectcomponent = ({count}) => {
+const Selectcomponent = ({count,setselection}) => {
   return (
     <Box>
-      <HStack spacing="10px">
+      <HStack spacing={["5px","10px","10px"]}>
       <Menu>
   <MenuButton  >
-    <HStack spacing="10px">
+    <HStack fontSize={["sm","md","md"]} spacing={["5px","10px","10px"]}>
 
-    <i style={{color:"#5846f6"}} className="fa-solid fa-square-minus" ></i><Text color={"#5846f6"} fontSize={"md"} >{`${count} selected`}</Text><ChevronDownIcon />
+    <i style={{color:"#5846f6"}} className="fa-solid fa-square-minus" ></i><Text color={"#5846f6"} fontSize={["sm","md","md"]} >{`${count} selected`}</Text><ChevronDownIcon />
 
     </HStack>
   </MenuButton>
-  <MenuList minW="120px" fontSize={"13px"}>
-    <MenuItem>Select All</MenuItem>
-    <MenuItem>Deselect All</MenuItem>
+  <MenuList minW={["80px","100px","120px"]}  fontSize={"13px"}>
+    <MenuItem onClick={()=>setselection(true)}>Select All</MenuItem>
+    <MenuItem onClick={()=>setselection(false)}>Deselect All</MenuItem>
     
   </MenuList>
 </Menu>
@@ -24,7 +24,7 @@ const Selectcomponent = ({count}) => {
  
   <CopyIcon/>
 </Tooltip>
-<Tooltip hasArrow label='delete' bg='black' color='black'>
+<Tooltip hasArrow label='delete' bg='black' color='white'>
  
   <DeleteIcon/>
 </Tooltip>
