@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 // import {Box,Heading} from "@chakra-ui/react"
 import style from "./NavbarBeforeLogin.module.css";
 import {
-  Stack,
+
   Box,
   Spacer,
   Image,
   Text,
   HStack,
-  Button,
+ 
   Drawer,
   DrawerBody,
-  DrawerFooter,
+ 
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
