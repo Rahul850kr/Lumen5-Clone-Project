@@ -8,6 +8,7 @@ import Login from './Login'
 import Signup from './Signup'
 import Template from './Template'
 import VideoCreationPage from './VideoCreationPage'
+import VideoViewerPage from './VideoViewerPage'
 
 const AllRoutes = () => {
   return (
@@ -18,7 +19,11 @@ const AllRoutes = () => {
         <Route path='/signup' element={<Signup/>} />
         <Route path='/enterprise' element={<EnterPrise/>} />
         <Route path='/videocreation' element={<VideoCreationPage/>} />
+
+        <Route path='/videoviewer'element={<VideoViewerPage/>}/>
+
         
+
     </Routes>
   )
 }

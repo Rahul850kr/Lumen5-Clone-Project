@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import "./EnterPriceStyle.css";
 import NavbarBeforeLogin from "./NavbarBeforeLogin";
+import Footer from "./Footer";
 
 const label = [
   {
@@ -519,8 +520,10 @@ const [localizationvideos, setLocalization] = useState([
                     Lumen5 is a video creation software that helps marketers, <br/>publishers, and brands create video content in a breeze, <br/>without any technical expertise.
                     </div>
                     <div><button className="en-div12-btn">Request a Demo</button></div>
-                </div>     
+                </div> 
+                <Footer/>    
     </>
+   
   );
 };
 
