@@ -2,14 +2,18 @@ import React  from "react";
 import Modal from "react-modal";
 import { Button } from "./Button";
 import { useNavigate } from "react-router-dom";
-import "./ReactModal.css"
+import "./ReactModal.css";
+import { updatevideo } from "../Redux/AppReducer/action";
+import { useDispatch,useSelector } from "react-redux";
 
 export const ReactModal = (props) => {
 
-    
+  const sourceVideo = props.sorce;  
     // console.log(props);
   const [open, setOpen] = React.useState(false);
-
+  const dispatch = useDispatch();
+  const currVideo = useSelector(store=>store.AppReducer.Currvideo);
+  console.log(currVideo);
   const navigate = useNavigate();
   return (
     <>
@@ -29,7 +33,7 @@ export const ReactModal = (props) => {
         <div className="video-div">
             <video className="video-display" width="400"  controls>
               <source
-                src={props.sorce}
+                src={sourceVideo}
                 type="video/mp4"
               />
             </video>
@@ -44,7 +48,11 @@ export const ReactModal = (props) => {
               <button>9:16</button>
           </div>
          
-          <button onClick={() => navigate('')}>USE THIS TEMPLATE</button>
+          <button onClick={() => {
+            dispatch(updatevideo(sourceVideo))
+            console.log(currVideo);
+            navigate('/videocreation')
+            }}>USE THIS TEMPLATE</button>
         </div>
         
       </Modal>
