@@ -2,7 +2,7 @@ import { Box, Button, Flex, HStack, Input, Modal, ModalBody, ModalCloseButton, M
 import { useSearchParams } from "react-router-dom"
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addprojects, deleteprojects, getprojects } from './Projectredux/action'
+import { addprojects, deleteprojects, getprojects } from "../Redux/ProjectReducer/action"
 import { DeleteIcon } from '@chakra-ui/icons'
 import { useToast } from '@chakra-ui/react'
 
@@ -24,11 +24,14 @@ dispatch(getprojects())
   },[])
   console.log(data)
   useEffect(() => {
+    if(params){
     setSearchparams(
       {
         query: params
       }
+    
     )
+    }
   }, [setSearchparams, params])
   let createproject=()=>{
     
@@ -45,7 +48,7 @@ console.log(searchparams.getAll("query")[0])
       <VStack align="stretch" spacing="0px" >
         <Box onClick={() =>{
          
-          setparams("Allvedios")}} color={searchparams.getAll("query")[0] === "Allvedios" && "blue"} _hover={{ bgColor: "#fafafb" }} p="10px" pl={["5px", "10px", "10px"]} >
+          setparams("Allvedios")}} color={searchparams.getAll("query")[0] === "Allvedios"  && "blue"||searchparams.getAll("query")[0] === undefined && "blue"} _hover={{ bgColor: "#fafafb" }} p="10px" pl={["5px", "10px", "10px"]} >
           <HStack spacing={["3px", "7px", "10px"]} ><i className="fa-solid fa-clapperboard"></i> <Text > All vedios</Text></HStack>
 
         </Box>
