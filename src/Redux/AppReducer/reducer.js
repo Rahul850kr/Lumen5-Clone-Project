@@ -47,7 +47,7 @@ let x=arr.filter((el)=>el.status===true).map((el,index)=>{
         el.status=false
        
     }
-   
+   return el
 })
                 console.log(state.Currvideo,number,x)
 return  {...state,Currvideo:[...state.Currvideo,...x]}
