@@ -17,13 +17,8 @@ console.log(count)
       <NavbarAfterLogin/>
       <Stack direction="row" spacing="0px" position="relative"  top="72px">
 <DashSidebar/>
-<<<<<<< HEAD
-<Stack position="relative" left={["25%","20%"]}  direction="column"  spacing="0px" w={["75%","80%"]} >
-  <Box  h={["50px","75px","100px"]}  bg="#f0f0f4"  w={["75%","80%"]} position="fixed" top="10vh" >
-=======
 <Stack position="relative" left={["25%","20%"]}  direction="column" bg="#f0f0f4" minH="100%" spacing="0px" w={["75%","80%"]} >
   <Box  h={["50px","75px","100px"]}  bg="#f0f0f4"  w={["75%","80%"]} zIndex={47} position="fixed" top="10vh" >
->>>>>>> 470b3e9ac1f457ee0ea2184eadf9ce5ff7a0d511
 <HStack  h={["50px","75px","100px"]} justifyContent="space-between" w="100%" p="0px 20px 0px 20px"  >
   <Text fontSize={["80%","120%","170%"]} fontWeight="semibold">All vedios</Text>
  
