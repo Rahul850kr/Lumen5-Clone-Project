@@ -50,7 +50,7 @@ export const ReactModal = (props) => {
          
           <button onClick={() => {
             dispatch(updatevideo(sourceVideo))
-            console.log(currVideo);
+            // console.log(currVideo);
             navigate('/videocreation')
             }}>USE THIS TEMPLATE</button>
         </div>
