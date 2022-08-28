@@ -20,9 +20,10 @@ export const reducer = (state = init, { type, payload }) => {
     case types.LOGIN_SUCCESS:
       return {
         ...state,
-        isAuth: payload,
+        isAuth: payload.status,
         isLoading: false,
         isError: false,
+        user:payload.name
       };
     case types.LOGIN_FAILURE:
       return {
@@ -31,6 +32,12 @@ export const reducer = (state = init, { type, payload }) => {
         isError: true,
         isAuth: false,
       };
+      case types.LOGOUT:
+        return {
+            ...state,
+            isAuth:false,
+            user:""
+        }
     default:
       return state;
   }
