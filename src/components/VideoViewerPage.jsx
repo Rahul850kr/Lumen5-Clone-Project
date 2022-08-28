@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./VideoViewer.module.css";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import {
   Button,
   Modal,
@@ -18,6 +19,7 @@ const VideoViewerPage = () => {
   const navigate = useNavigate();
   const [copied, setCopied] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const username=useSelector(store=>store.AuthReducer.user)
 
   function copy() {
     const el = document.createElement("input");
@@ -32,8 +34,8 @@ const VideoViewerPage = () => {
 
   const onDownload = () => {
     const link = document.createElement("a");
-    link.download = `final.mp4`;
-    link.href = "./final.mp4";
+    link.download = `Masai.mp4`;
+    link.href = "./Masai.mp4";
     link.click();
   };
 
@@ -57,10 +59,7 @@ const VideoViewerPage = () => {
           {/* 1st div */}
           <div className={style.viewer_video}>
             <video
-              src="final.mp4"
-              // autoPlay
-              muted={false}
-            ></video>
+              src="Masai.mp4" autoplay muted={false}></video>
           </div>
           <div>
             {/* 2nd div */}
@@ -72,7 +71,7 @@ const VideoViewerPage = () => {
                 <div className={style.viewer_contentleft}>
                   <div className={style.viewer_first}>P</div>
                   <div className={style.viewer_name}>
-                    Pooja Dhuri <br />
+                    {username}<br />
                     Publish on 23 Aug
                   </div>
                 </div>
