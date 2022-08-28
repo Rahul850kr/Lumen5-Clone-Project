@@ -7,4 +7,6 @@ export const loginSuccess=(data)=>(dispatch)=>{
     dispatch({type:types.LOGIN_SUCCESS,payload:data})
 }
 
-
+export const logout=()=>(dispatch)=>{
+    dispatch({type:types.LOGOUT})
+}
