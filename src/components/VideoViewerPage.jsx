@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./VideoViewer.module.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import finalVideo from "../Video/Masai.mp4"
 import {
   Button,
   Modal,
@@ -59,7 +60,7 @@ const VideoViewerPage = () => {
           {/* 1st div */}
           <div className={style.viewer_video}>
             <video
-              src="Masai.mp4" autoplay muted={false}></video>
+              src={finalVideo} autoplay muted={false}></video>
           </div>
           <div>
             {/* 2nd div */}
