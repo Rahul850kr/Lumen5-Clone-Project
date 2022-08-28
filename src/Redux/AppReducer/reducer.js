@@ -45,13 +45,19 @@ let arr=state.Currvideo.slice(0)
 let x=arr.filter((el)=>el.status===true).map((el,index)=>{
     if(el.status===true){
         el.status=false
-        el.id=number+index
+       
     }
-    return el
+   
 })
                 console.log(state.Currvideo,number,x)
-return state
+return  {...state,Currvideo:[...state.Currvideo,...x]}
                
+            }
+            case types.LAST_CREATED :{
+                return {...state,Currvideo:state.Currvideo.length>0?[state.Currvideo[state.Currvideo.length-1]]:state.Currvideo}
+            }
+            case types.LAST_MODIFIED :{
+                return {...state,Currvideo:state.Currvideo.length>1?[state.Currvideo[state.Currvideo.length-1]]:state.Currvideo}
             }
            
         default:
