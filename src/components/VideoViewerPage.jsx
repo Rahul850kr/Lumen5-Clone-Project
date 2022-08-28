@@ -59,7 +59,7 @@ const VideoViewerPage = () => {
           {/* 1st div */}
           <div className={style.viewer_video}>
             <video
-              src="Masai.mp4" autoPlay muted={false}></video>
+              src="Masai.mp4" autoplay muted={false}></video>
           </div>
           <div>
             {/* 2nd div */}
