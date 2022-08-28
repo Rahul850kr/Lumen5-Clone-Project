@@ -1,19 +1,9 @@
 {
   "Projects": [
     {
-      "title": "New project",
-      "color": "#106eb7",
-      "id": 4
-    },
-    {
-      "title": "lumen 3",
-      "color": "#017d9c",
-      "id": 6
-    },
-    {
-      "title": "new peo",
-      "color": "#106eb7",
-      "id": 7
+      "title": "lumen5",
+      "color": "#ffa101",
+      "id": 10
     }
   ]
 }
