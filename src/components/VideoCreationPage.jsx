@@ -18,6 +18,7 @@ const VideoCreationPage = () => {
   const [importing, setImporting] = useState(false);
   const [loading, setLoading] = useState(false);
   const toast = useToast();
+  const [open, setOpen] = React.useState(false);
   // console.log(text.length);
 
   const handleImport = () => {
