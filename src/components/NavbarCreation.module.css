@@ -71,11 +71,25 @@
 }
 
 .logout{
-    width: 30px;
+    width: auto;
     height: 30px;
-    border-radius: 50%;
+    /* border-radius:  */
     background-color: gray;
     color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview:hover{
+    background-color: #5846f6;
+    color:white;
+}
+
+.publish:hover{
+    background-color: #2a2089;
 }
 
 @media all and (max-width:950px){
