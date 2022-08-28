@@ -44,7 +44,7 @@ dispatch(getprojects())
   }
 console.log(searchparams.getAll("query")[0])
   return (
-    <Box position="fixed" top="10vh" left="0px" h="88.5vh" w={["25%","20%"]} border="1px solid rgba(0,0,0,0.1)" fontWeight="semibold" pt="10px" fontSize={["30%", "53%", "90%"]} color="#7e889a">
+    <Box position="fixed" top="80px" left="0px" h="88.5vh" w={["25%","20%"]} border="1px solid rgba(0,0,0,0.1)" fontWeight="semibold" pt="10px" fontSize={["30%", "53%", "90%"]} color="#7e889a">
       <VStack align="stretch" spacing="0px" >
         <Box onClick={() =>{
          
