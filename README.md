@@ -19,8 +19,8 @@ Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you 
 ## Pages & Features 👇
 
  - ### Home Page : NavBar, carousel, templates ands sliders.
- - ### Login/Signup : User authentication to check whether user email and password match with details existing in the database.
- - ### Enterprise Page : user can get the details about how to convert the content the video and it contains demo video.
+ - ### Login/Signup : User needs to Signup by providing their details. And for Login user authentication to be checked whether the user email and the password match with details existing in the database.
+ - ### Enterprise Page : user can get the details about how to convert the content into the video and it contains demo video.
  - ### DashBoard Page: Adding Projects and Storing the existing templates.
  - ### Templates Page : Categories and Category Templates.
  - ### VideoCreation Page : User can covert their blog or any article into a professional video.
