@@ -1,0 +1,103 @@
+.mainDiv{
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid red ; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    height: 32px;
+    width: 122px;
+}
+
+.logoDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.upgrade{
+    background-color: white;
+    border: 1px solid #5846f6 ;
+    color: #5846f6;
+    padding: 3px 7px;
+    /* border-radius: 20px; */
+    font-size: 12px;
+}
+
+.preview{
+    background-color: white;
+    border: 1px solid #5846f6 ;
+    color: #5846f6;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.publish{
+    background-color: #5846f6;
+    /* border: 1px solid white ; */
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.secondDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secondInnerDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border-right: 1px solid black;
+    padding: 0px 10px;
+}
+
+#bell{
+    font-size: 25px;
+}
+
+.logout{
+    width: auto;
+    height: 30px;
+    /* border-radius:  */
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview:hover{
+    background-color: #5846f6;
+    color:white;
+}
+
+.publish:hover{
+    background-color: #2a2089;
+}
+
+@media all and (max-width:950px){
+    .upgrade{
+        display: none;
+    }
+    #bell{
+        /* font-size: 25px; */
+        display: none;
+    }
+}

@@ -8,12 +8,15 @@ import Selectcomponent from './Selectcomponent'
 
 
 const Dashboard = () => {
+ 
 let [count,setcount]=useState(0)
- let [selection,setselection]=useState(false)
-console.log(count)
+ 
+
+ 
   
   return (
-    <Stack w="100%" minH="100%" >
+   
+    <Stack w="100%"  >
       <NavbarAfterLogin/>
       <Stack direction="row" spacing="0px" position="relative"  top="72px">
 <DashSidebar/>
@@ -22,7 +25,7 @@ console.log(count)
 <HStack  h={["50px","75px","100px"]} justifyContent="space-between" w="100%" p="0px 20px 0px 20px"  >
   <Text fontSize={["80%","120%","170%"]} fontWeight="semibold">All vedios</Text>
  
- { count>0 ?<Selectcomponent setselection={setselection} count={count}></Selectcomponent>:
+ { count>0 ?<Selectcomponent   count={count}></Selectcomponent>:
 <Select bg="white" h={["25px","30px","40px"]} w={["42%","32%","17%"]} fontSize={["50%","70%","80%"]} outline="1px solid rgba(0,0,0,0.1)" >
   <option value='Last modified'>Last modified</option>
   <option value='Last created'>Last created</option>
@@ -33,11 +36,12 @@ console.log(count)
 
 
   </Box>
-<DashBody selection={selection} setcount={setcount}/>
+<DashBody  setcount={setcount}/>
 </Stack>
 
 </Stack>
     </Stack>
+   
   )
 }
 

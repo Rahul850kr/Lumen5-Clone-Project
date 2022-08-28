@@ -12,20 +12,17 @@ import VideoViewerPage from './VideoViewerPage'
 
 const AllRoutes = () => {
   return (
-    
     <Routes>
-        <Route path='/' element={<Dashboard/>} />
+        <Route path='/' element={<Homepage/>} />
+
         <Route path='/login' element={<Login/>} />
         <Route path='/signup' element={<Signup/>} />
         <Route path='/enterprise' element={<EnterPrise/>} />
         <Route path='/videocreation' element={<VideoCreationPage/>} />
-
+        <Route path="/dashboard" element={<Dashboard/>} /> 
         <Route path='/videoviewer'element={<VideoViewerPage/>}/>
-
-        
-
     </Routes>
   )
 }
 
-export default AllRoutes
+export default AllRoutes;
