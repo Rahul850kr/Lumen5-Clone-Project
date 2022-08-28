@@ -26,7 +26,7 @@ const NavbarAfterLogin = () => {
     navigate("/");
   };
   return (
-    <div className={style.mainDiv}>
+    <div style={{zIndex:"44"}} className={style.mainDiv}>
       <div>
         <Link to="/">
           {" "}
