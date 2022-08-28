@@ -23,4 +23,9 @@ export const copyvedio=()=>dispatch=>{
 }
 
 
- 
+ export const lastmodified=()=>dispatch=>{
+    dispatch({type:types.LAST_MODIFIED})
+ } 
+ export const lastcreated=()=>dispatch=>{
+    dispatch({type:types.LAST_CREATED})
+ }
