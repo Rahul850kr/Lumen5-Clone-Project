@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import style from "./Login.module.css";
 import { Text, Flex, Input, Spacer, VStack, useToast } from "@chakra-ui/react";
@@ -9,6 +9,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const data=useSelector(store=>store.SignupReducer.userDetails);
   const toast = useToast()
 
@@ -23,14 +24,18 @@ const Login = () => {
 
     for(let i=0;i<data.length;i++)
     {
+      
         if(data[i].email==email && data[i].password==password)
         {
+          let payload={name:data[i].name,status:true}
           toast({
             title: "Login Successfull",
             status: "success",
             isClosable: true,
           })
-            return dispatch(loginSuccess(true))
+            dispatch(loginSuccess(payload))
+            navigate("/dashboard");
+            return;
         }
     }
     alert("login failed")

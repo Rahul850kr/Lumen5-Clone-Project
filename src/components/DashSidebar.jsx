@@ -1,4 +1,4 @@
-import { Box, Button, Flex, HStack, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Spacer,  Stack,  Text, useDisclosure, VStack } from '@chakra-ui/react'
+import { Box, Button,  HStack, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Spacer,  Stack,  Text, useDisclosure, VStack } from '@chakra-ui/react'
 import { useSearchParams } from "react-router-dom"
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -21,7 +21,7 @@ const DashSidebar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   useEffect(()=>{
 dispatch(getprojects())
-  },[])
+  },[dispatch])
   console.log(data)
   useEffect(() => {
     if(params){
@@ -48,7 +48,7 @@ console.log(searchparams.getAll("query")[0])
       <VStack align="stretch" spacing="0px" >
         <Box onClick={() =>{
          
-          setparams("Allvedios")}} color={searchparams.getAll("query")[0] === "Allvedios"  && "blue"||searchparams.getAll("query")[0] === undefined && "blue"} _hover={{ bgColor: "#fafafb" }} p="10px" pl={["5px", "10px", "10px"]} >
+          setparams("Allvedios")}} color={searchparams.getAll("query")[0] === "Allvedios"  ? "blue": searchparams.getAll("query")[0] === undefined && "blue"} _hover={{ bgColor: "#fafafb" }} p="10px" pl={["5px", "10px", "10px"]} >
           <HStack spacing={["3px", "7px", "10px"]} ><i className="fa-solid fa-clapperboard"></i> <Text > All vedios</Text></HStack>
 
         </Box>
@@ -101,6 +101,7 @@ console.log(searchparams.getAll("query")[0])
               </Button>
               <Button p={["15px","18px","22px"]} onClick={()=>{
                 createproject()
+                if(data.length>0||title.length>0){
                 toast({
                   position: 'top-center',
                   title: 'Hurray',
@@ -109,6 +110,16 @@ console.log(searchparams.getAll("query")[0])
                   duration: 9000,
                   isClosable: true,
                 })
+              }else{
+                toast({
+                  position: 'top-center',
+                  title: 'warning',
+                  description: `Invalid information`,
+                  status: 'success',
+                  duration: 9000,
+                  isClosable: true,
+                })
+              }
                 }} maxH={["8px"]} borderRadius={["20px","50px"]} bg="blue" fontSize={["10px","15px"]} variant='ghost'>Create</Button>
             </ModalFooter>
           </ModalContent>

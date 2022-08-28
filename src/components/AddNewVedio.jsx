@@ -1,43 +1,63 @@
 import { Badge, Box, Button, Checkbox, Flex, Input, Popover,  PopoverBody, PopoverContent,  PopoverTrigger, Spacer, Text, VStack } from '@chakra-ui/react'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { CalendarIcon, CopyIcon, DeleteIcon, DownloadIcon, EditIcon, ExternalLinkIcon } from '@chakra-ui/icons'
+import { useDispatch, useSelector } from 'react-redux'
+import { updatestaus } from '../Redux/AppReducer/action'
 
-const AddNewVedio = ({ title, badge ,setcount}) => {
+const AddNewVedio = ({ title, badge ,setcount,item}) => {
+  let {Currvideo}=useSelector(state=>state.AppReducer)
+  
   let [hover, sethover] = useState(false)
   let [input, setinput] = useState(false)
-  let [check,setcheck]=useState(false)
   
+  let vedio = useRef(null)
+  useEffect(() => {
+    let length=Currvideo.filter((el)=>el.status===true).length
+    if(Currvideo.length==0){
+      setcount(0)
+    }
+    
+    setcount(length)
+   }, [item.status,Currvideo])
+  let dispatch=useDispatch()
   let [edittitile] = useState("Untitled vedio")
  
-  let vedio = useRef(null)
+
+
+
+
   
   return (
-    <Box boxSizing='border-box' boxShadow='lg' rounded='md' bg='white' fontSize={["10%", "40%", "90%"]} w={["100%", "100%", "100%"]} minH={["120px", "200px", "260x"]} borderRadius="10px" >
+    <Box  boxSizing='border-box' boxShadow='lg' rounded='md' bg='white' fontSize={["10%", "40%", "90%"]}  w={["100%", "100%", "100%"]} minH={["120px", "200px", "260x"]} borderRadius="10px" >
       <VStack spacing={["8px", "12px", "18px"]} textAlign="left" align='stretch' pt="0px">
         <Box >
           <Box position="relative">
-          <video onClick={() => setinput(false)} style={{ minHeight: "20%", width: "100%" }} left="0px" onMouseOver={() => {
+          <video onClick={() => setinput(false)} style={{ minHeight: "20%", width: "100%",borderRadius:"10px" }} left="0px" onMouseOver={() => {
             vedio.current.play()
             sethover(true)
           }} onMouseLeave={() => {
             vedio.current.pause()
             sethover(false)
           }} ref={vedio} muted preload='auto' loop  >
-            <source src="https://static.airtable.com/images/homescreen/Homepage_Hero_FINAL.mp4" >
+            <source src={item.vediourl} >
 
             </source>
             Your browser does not support the video tag.
           </video>
           {
-            hover||check ? <Checkbox onChange={(e)=>{if(e.target.checked){setcount(prev=>prev+1)} setcheck(e.target.checked)}
-           } size={['sm',"md","md"]} onMouseOver={() => sethover(true)} onMouseLeave={() => sethover(false)} position="absolute" top="10%" left="85%" colorScheme='green' outline="1px solid blue"></Checkbox> : null
+            hover ||item.status? <Checkbox  defaultChecked={item.status}  onChange={(e)=>{
+              // setcheck(!value)
+              dispatch(updatestaus(e.target.checked,item.id))
+             console.log(e.target.checked)
+             
+            }} size={['sm',"md","md"]} onMouseOver={() => sethover(true)} onMouseLeave={() => sethover(false)} position="absolute" top="10%" left="85%" colorScheme='green' outline="1px solid blue"></Checkbox> : null
           }
           {
             hover ? <Box onMouseOver={() => sethover(true)} onMouseLeave={() => sethover(false)} left="0px" backgroundColor="#7d8084" color="white" position="absolute" w="100%" top={["90%","90%","90%"]} textAlign="center"> <Text >Edit</Text></Box> : null
           }
 </Box>
           {
-            input ? <Input mt={["10px", "7px", "10px"]} p="0px 10px 0px 10px" h={["","","20px"]} fontSize={["5px","10px","15px"]} defaultValue={title || edittitile} variant="flushed"></Input> : <Text p="0px 10px 0px 10px" fontSize={["5px","10px","15px"]} mt={["10px", "7px", "10px"]} onClick={() => setinput(true)}>{title || edittitile}<EditIcon></EditIcon></Text>
+            input ? <Input onKeyDown={(e)=>console.log(e)} mt={["10px", "7px", "10px"]} p="0px 10px 0px 10px" h={["","","20px"]} fontSize={["5px","10px","15px"]} defaultValue={title || edittitile} variant="flushed"></Input> : <Text p="0px 10px 0px 10px" fontSize={["5px","10px","15px"]} mt={["10px", "7px", "10px"]} onClick={() => setinput(true)}>{item.title || edittitile}<EditIcon></EditIcon></Text>
 
           }
 
@@ -74,6 +94,7 @@ const AddNewVedio = ({ title, badge ,setcount}) => {
         </Flex>
       </VStack>
     </Box>
+        
   )
 }
 
