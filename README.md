@@ -8,6 +8,7 @@ Hello Everyone !🌏 We are Masaiians and we are presenting our project- clone o
 
 Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional video content in minutes.
 
+### original website link : https://lumen5.com/
 
 ## Team Members 👨‍💻 :
 
@@ -88,4 +89,5 @@ Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you 
 
 
 ### Github Repository : https://github.com/Rahul850kr/synonymous-wall-8152
+### Live Link : https://lumen5-clone-project.netlify.app/
 
