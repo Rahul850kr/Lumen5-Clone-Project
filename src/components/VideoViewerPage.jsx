@@ -59,8 +59,8 @@ const VideoViewerPage = () => {
         <div className={style.viewer_bottom}>
           {/* 1st div */}
           <div className={style.viewer_video}>
-            <video
-              src={finalVideo} autoplay muted={false}></video>
+            <video autoplay muted={false} controls>
+               <source src={finalVideo} ></source> </video>
           </div>
           <div>
             {/* 2nd div */}

@@ -107,7 +107,7 @@ console.log(searchparams.getAll("query")[0])
                   title: 'Hurray',
                   description: `${title} has been successfully created`,
                   status: 'success',
-                  duration: 9000,
+                  duration: 5000,
                   isClosable: true,
                 })
               }else{

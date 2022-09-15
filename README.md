@@ -1,70 +1,93 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lumen5 Clone Project
 
-## Available Scripts
+Hello Everyone !🌏 We are Masaiians and we are presenting our project- clone of Lumen5, built during construct week.
 
-In the project directory, you can run:
 
-### `npm start`
+## Details : 🔭
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional video content in minutes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### original website link : https://lumen5.com/
 
-### `npm test`
+## Team Members 👨‍💻 :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Rahul Kumar
+- Buvaneswaran Acharya
+- Pooja Khema Dhuri
+- Manoj Barki
 
-### `npm run build`
+## Pages & Features 👇
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ - ### Home Page : NavBar, carousel, templates ands sliders.
+ - ### Login/Signup : User needs to Signup by providing their details. And for Login user authentication to be checked whether the user email and the password match with details existing in the database.
+ - ### Enterprise Page : user can get the details about how to convert the content into the video and it contains demo video.
+ - ### DashBoard Page: Adding Projects and Storing the existing templates.
+ - ### Templates Page : Categories and Category Templates.
+ - ### VideoCreation Page : User can covert their blog or any article into a professional video.
+ - ### Publish Page : User can download or edit the converted video.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+**Client:** REACT,REDUX,HTML5 , CSS3 , JAVASCRIPT, IMPORT & EXPORT,CHAKRA UI.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Server:** LOCAL STORAGE AND JSON SERVER.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
+- ### Home Page
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/homepage1.png?raw=true)
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/homepage2.png?raw=true)
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/homepage3.png?raw=true)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- ### Login Page
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/login.png?raw=true)
 
-## Learn More
+- ### Signup Page
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/signup.png?raw=true)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ### Dashboard Page
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/Dashboard.png?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ### Templates Page
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/template.png?raw=true)
 
-### Code Splitting
+- ### VideoCreation Page
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/videocreation1.png?raw=true)
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/videocreation2.png?raw=true)
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/videocreation3.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ### Publish Page
+![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/lastpage.png?raw=true)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Roles & Responsibilities :-
 
-### Advanced Configuration
+- GitHub is managed by Rahul Kumar and also the Team Lead of the Project.
+- The Landing Page and Templates page is designed and functioned by Buvaneswaran Acharya .
+- login/signup page,Navbars and videoCreation page is designed and functioned by Rahul kumar.
+- Dashboard and Footer is designed and functioned by Manoj Barki.
+- Enterprise page and Publish page is designed and functioned by Pooja Khema Dhuri.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    
+## Lessons Learned
 
-### Deployment
+- We all became proficient in reading the code of team members.
+- Our code writing style became cleaner as we had used Raect to write code and used import export so that code become well structured.
+- We learn about many CSS properties that we didn't know before.
+- Our skills in React,Redux and DOM manipulation became better.
+- We all learned how to plan a project and execute that in a limited time frame.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### LinkedIn Profile link of the Team Members:
+- #### Rahul Kumar : https://www.linkedin.com/in/rahul-kumar-a76323230/
+- #### Buvaneswaran Acharya : https://www.linkedin.com/in/buvaneswaran-s-b63844228/
+- #### Manoj Barki: https://www.linkedin.com/in/manoj-barki-024547221/
+- #### Pooja Khema Dhuri : https://www.linkedin.com/in/pooja-dhuri-a0b63b221/
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Github Repository : https://github.com/Rahul850kr/synonymous-wall-8152
+### Live Link : https://lumen5-clone-project.netlify.app/
+
