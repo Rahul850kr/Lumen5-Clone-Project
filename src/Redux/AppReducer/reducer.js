@@ -41,16 +41,22 @@ console.log("DELETE_VEDIO")
             }
             case types.COPY_VEDIO :{
                 let number=state.Currvideo[state.Currvideo.length-1].id+1
-let arr=state.Currvideo.slice(0)
-let x=arr.filter((el)=>el.status===true).map((el,index)=>{
-    if(el.status===true){
-        el.status=false
-       
-    }
-   return el
+// let arr=state.Currvideo.slice(0)
+let x=state.Currvideo.map((el,index)=>{
+   
+    return {...el}
 })
-                console.log(state.Currvideo,number,x)
-return  {...state,Currvideo:[...state.Currvideo,...x]}
+let y=x.filter((el)=>el.status===true).map((ty,ind)=>{
+    if(ty.status===true){
+        ty.id=number+ind
+        ty.status=false
+    }
+    return ty
+})
+let copied=[...state.Currvideo,...y]
+localStorage.setItem("untitlevedios",JSON.stringify(copied))
+                console.log(state.Currvideo,x,number,y)
+return {...state,Currvideo:copied}
                
             }
             case types.LAST_CREATED :{

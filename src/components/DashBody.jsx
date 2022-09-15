@@ -14,7 +14,7 @@ setcount(0)
   
 }, [Currvideo])
 
- 
+ console.log(Currvideo)
   return (
     
     <Box bg="#f0f0f4" minH="100vh"  padding="20px 10px 20px 10px" h="100%" w="100%" position="relative" top={["0px","25px","59px"]}  >
