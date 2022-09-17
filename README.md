@@ -37,7 +37,7 @@ Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you 
 
 ## Screenshots
 - ### Home Page
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/homepage1.png?raw=true)
+![App Screenshot](./src/screenshots%20of%20Lumen5/Dashboard.png)
 ![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/homepage2.png?raw=true)
 ![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/homepage3.png?raw=true)
 
