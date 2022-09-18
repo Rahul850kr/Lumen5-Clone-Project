@@ -37,32 +37,32 @@ Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you 
 
 ## Screenshots
 - ### Home Page
-![App Screenshot](src/screenshots%20of%20Lumen5/Dashboard.png)
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/homepage2.png?raw=true)
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/homepage3.png?raw=true)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917881-4ff75298-e44d-46cf-9389-85283ae7a173.png)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917883-1be67123-d407-4f21-87dd-a96948d5ff9b.png)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917888-6b6654a8-6ab0-4779-9d28-5c3ff3115ebf.png)
 
 - ### Login Page
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/login.png?raw=true)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917927-7e49a406-193f-4dda-9cf2-3d8c32c11007.png)
 
 - ### Signup Page
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/signup.png?raw=true)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917931-f266bc9c-0ba7-46ce-930a-3b92bacb0ea3.png)
 
 - ### Dashboard Page
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/Dashboard.png?raw=true)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917916-082bf705-2c83-4e08-bdfc-0443d688192f.png)
 
 - ### Templates Page
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/template.png?raw=true)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917932-6ddadc87-0da6-443f-a7fa-cd78f8fe1ac8.png)
 
 - ### VideoCreation Page
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/videocreation1.png?raw=true)
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/videocreation2.png?raw=true)
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/videocreation3.png?raw=true)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917950-584b2d1c-08b8-4133-b289-c04296c237a7.png)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917958-ca251d39-7bd6-4e5c-978e-6551be60c271.png)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917965-892291ed-9dd9-479d-a7a6-bbb20f2e01fa.png)
 
 - ### Publish Page
-![App Screenshot](https://github.com/Rahul850kr/synonymous-wall-8152/blob/master/src/screenshots%20of%20Poject/lastpage.png?raw=true)
+![App Screenshot](https://user-images.githubusercontent.com/101577492/190917925-d090958a-0d05-471f-995a-7a703f1287b7.png)
 
-
-
+- ### Footer
+![Footer](https://user-images.githubusercontent.com/101577492/190917921-e91b6cfa-b432-47b9-9e77-64eb37b4feeb.png)
 
 ## Roles & Responsibilities :-
 
